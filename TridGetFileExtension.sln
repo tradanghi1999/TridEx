@@ -7,6 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TridGetFileExtension", "Tri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TridTestFeature", "TridTestFeature\TridTestFeature.csproj", "{A33146E8-B174-4BA9-9878-613B10B27ACC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalFileModelEngine", "LocalFileModelEngine\LocalFileModelEngine.csproj", "{8E258FCA-B6CF-43C0-94A5-31E57F7EE50A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalInteractor", "LocalInteractor\LocalInteractor.csproj", "{A42925F6-5D7E-4E26-87A0-BA8014F45FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalHIstoryMapper", "LocalHIstoryMapper\LocalHIstoryMapper.csproj", "{96AF7CE3-0920-4B1A-9ADF-3EB2554D0533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalPreController", "PreController\LocalPreController.csproj", "{5C59340A-96E8-48D9-8006-C11181252D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalGUIWinForm", "LocalGUIWinForm\LocalGUIWinForm.csproj", "{CE032810-DFCC-426B-9D3D-03AE9156222C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalDatabase", "LocalDatabase\LocalDatabase.csproj", "{2A6124CE-BEC0-4C4D-9C9B-690661F30B91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +33,30 @@ Global
 		{A33146E8-B174-4BA9-9878-613B10B27ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33146E8-B174-4BA9-9878-613B10B27ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A33146E8-B174-4BA9-9878-613B10B27ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E258FCA-B6CF-43C0-94A5-31E57F7EE50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E258FCA-B6CF-43C0-94A5-31E57F7EE50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E258FCA-B6CF-43C0-94A5-31E57F7EE50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E258FCA-B6CF-43C0-94A5-31E57F7EE50A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A42925F6-5D7E-4E26-87A0-BA8014F45FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A42925F6-5D7E-4E26-87A0-BA8014F45FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A42925F6-5D7E-4E26-87A0-BA8014F45FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A42925F6-5D7E-4E26-87A0-BA8014F45FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96AF7CE3-0920-4B1A-9ADF-3EB2554D0533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96AF7CE3-0920-4B1A-9ADF-3EB2554D0533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96AF7CE3-0920-4B1A-9ADF-3EB2554D0533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96AF7CE3-0920-4B1A-9ADF-3EB2554D0533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C59340A-96E8-48D9-8006-C11181252D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C59340A-96E8-48D9-8006-C11181252D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C59340A-96E8-48D9-8006-C11181252D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C59340A-96E8-48D9-8006-C11181252D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE032810-DFCC-426B-9D3D-03AE9156222C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE032810-DFCC-426B-9D3D-03AE9156222C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE032810-DFCC-426B-9D3D-03AE9156222C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE032810-DFCC-426B-9D3D-03AE9156222C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6124CE-BEC0-4C4D-9C9B-690661F30B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6124CE-BEC0-4C4D-9C9B-690661F30B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6124CE-BEC0-4C4D-9C9B-690661F30B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6124CE-BEC0-4C4D-9C9B-690661F30B91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

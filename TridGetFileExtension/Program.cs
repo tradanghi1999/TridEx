@@ -58,7 +58,7 @@ namespace TridGetFileExtension
             Presenter presenter = new Presenter(viewModel);
             OutPutBoudary outPutBoudary = (OutPutBoudary)presenter;
 
-            Interactor interactor = new Interactor(io, outPutBoudary,ihis);
+            Interactor interactor = new Interactor(io, outPutBoudary, ihis);
 
             InputBoundary inputBoundary = (InputBoundary)interactor;
 

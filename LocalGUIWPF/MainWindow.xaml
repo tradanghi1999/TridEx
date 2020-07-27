@@ -6,7 +6,125 @@
         xmlns:local="clr-namespace:LocalGUIWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Window.Resources>
+        <local:ImageConverter x:Key="ImageConverter" />
+    </Window.Resources>
+
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" Background="White" >
+            <Label  Content="File Extension Detection App" VerticalAlignment="Top"
+               HorizontalAlignment="Center" FontSize="14"/>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Menu
+                Margin="20,0,20,0"
+              VerticalAlignment="Top">
+                <MenuItem Header="_View" >
+                    <MenuItem Header="_Preview" IsCheckable="True" 
+                              Checked="MenuItem_Checked" 
+                              Unchecked="MenuItem_Unchecked">
+                    </MenuItem>
+                    <MenuItem Header="_Explorer" IsCheckable="True" 
+                              Checked="MenuItem_Checked_1" 
+                              Unchecked="MenuItem_Unchecked_1">
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <DockPanel
+            Margin="20,10,20,0"
+            >
+            <GroupBox DockPanel.Dock="Left"  
+                      Header="Explorer"  
+                      VerticalAlignment="Top" 
+                      Visibility="Collapsed"
+                      Name="grbExplorer"
+                      Width="200"
+                      Height="300"
+                      >
+
+            </GroupBox>
+            <GroupBox DockPanel.Dock="Right"  
+                      Header="Preview"  
+                      VerticalAlignment="Top" 
+                      Visibility="Collapsed"
+                      Name="grbPreview"
+                      Width="200"
+                      Height="300"
+                      >
+
+            </GroupBox>
+            <GroupBox Header="File Chosen"  
+                      VerticalAlignment="Top" 
+                      Name="grbFileChosen"
+                      
+                      >
+                <StackPanel>
+                    <DataGrid x:Name="dgvFileChosen" Height="270"
+                              ScrollViewer.CanContentScroll="True" 
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto">>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Id}" 
+                                                 
+                                                Header="No."/>
+                            <DataGridTextColumn Binding="{Binding FileName}" 
+                                                 
+                                                Header="File Name" Width="300"/>
+                            <DataGridTextColumn Binding="{Binding Extension}" 
+                                                 
+                                                Header="Extension" Width="70"/>
+                            <DataGridTemplateColumn  
+                                                    Header="Analyzed" Width="60">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Image Source="{Binding AnalyzedStateImage, Converter={StaticResource ResourceKey=ImageConverter}}"
+                                               Stretch="None"></Image>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn  
+                                                    Header="Edited" Width="50">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Image Source="{Binding EditedStateImage, Converter={StaticResource ResourceKey=ImageConverter}}"
+                                               Stretch="None"></Image>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+                    <WrapPanel
+                        HorizontalAlignment="Right">
+                        <Button Name="btnEdt" 
+                                Content="Edit"
+                                Padding="5"
+                                MinWidth="70"
+                                Margin="1"></Button>
+                        <Button Name="btnAna" 
+                                Content="Analyze" 
+                                Padding="5"
+                                MinWidth="70"
+                                Margin="1"></Button>
+                        <Button Name="btnChoose" 
+                                Content="Choose..."
+                                Padding="5"
+                                MinWidth="70"
+                                Margin="1"></Button>
+
+                    </WrapPanel>
+                </StackPanel>
+
+
+            </GroupBox>
+        </DockPanel>
+
+
+
+
+
+    </DockPanel>
+
 </Window>

@@ -41,6 +41,8 @@ namespace LocalGUIWPF
 
             interactor.LoadHistory();
 
+            //Window gui = new WindowTest();
+
             app.Run(gui);
 
 

@@ -271,6 +271,8 @@ namespace LocalInteractor
 
             for (int i = 0; i < indexes.Length; i++)
             {
+                if (indexes[i] < 0 || indexes[i] > fileModels.Count - 1)
+                    continue;
                 if (fileModels[indexes[i]].FileName == fileNames[i])
                 {
                     fileModels[indexes[i]].edit();
